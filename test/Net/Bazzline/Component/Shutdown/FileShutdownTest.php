@@ -9,7 +9,7 @@ namespace Test\Net\Bazzline\Component\Shutdown;
 use Exception;
 use PHPUnit_Framework_TestCase;
 
-class ShutdownFileTest
+class FileShutdownTest
 {
 	/**
 	 * @author stev leibelt
@@ -185,7 +185,7 @@ class ShutdownFileTest
 	/**
 	 * @author stev leibelt
 	 * @param boolean $setName
-	 * @return \Net\Bazzline\Component\Shutdown\ShutdownFile
+	 * @return \Net\Bazzline\Component\Shutdown\FileShutdown
 	 * @since 2013-01-03
 	 */
 	private function getNewShutdown($setName = true)

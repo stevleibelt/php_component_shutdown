@@ -9,13 +9,13 @@ namespace Net\Bazzline\Component\Shutdown;
 use RuntimeException;
 
 /**
- * Class ShutdownFile
+ * Class FileShutdown
  *
  * @package Net\Bazzline\Component\Shutdown
  * @author stev leibelt <artodeto@arcor.de>
  * @since 2013-06-30
  */
-class ShutdownFile
+class FileShutdown
 {
 	/**
 	 * @author stev leibelt
