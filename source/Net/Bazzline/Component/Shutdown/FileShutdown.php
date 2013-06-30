@@ -34,9 +34,7 @@ class FileShutdown implements ShutdownInterface
 	}
 
 	/**
-	 * @author stev leibelt
-	 * @return boolean
-	 * @since 2013-01-03
+     * {$inheritDoc}
 	 */
 	public function isRequested()
 	{
@@ -44,9 +42,7 @@ class FileShutdown implements ShutdownInterface
 	}
 
 	/**
-	 * @author stev leibelt
-	 * @since 2013-01-03
-	 * @throws \Exception
+     * {$inheritDoc}
 	 */
 	public function request()
 	{
@@ -60,9 +56,7 @@ class FileShutdown implements ShutdownInterface
 	}
 
 	/**
-	 * @author stev leibelt
-	 * @since 2013-01-03
-	 * @throws \Exception
+     * {$inheritDoc}
 	 */
 	public function cancel()
 	{
@@ -76,9 +70,7 @@ class FileShutdown implements ShutdownInterface
 	}
 
 	/**
-	 * @author stev leibelt
-	 * @return string
-	 * @since 2013-01-03
+     * {$inheritDoc}
 	 */
 	public function getName()
 	{
@@ -90,11 +82,8 @@ class FileShutdown implements ShutdownInterface
 	}
 
 	/**
-	 * $name is extended with '.shutdown'
-	 *
-	 * @author stev leibelt
-	 * @param string $name
-	 * @since 2013-01-03
+     * Is adding '.shutdown' to given $name
+     * {$inheritDoc}
 	 */
 	public function setName($name)
 	{
