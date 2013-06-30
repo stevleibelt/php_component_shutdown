@@ -15,7 +15,7 @@ use RuntimeException;
  * @author stev leibelt <artodeto@arcor.de>
  * @since 2013-06-30
  */
-class FileShutdown
+class FileShutdown implements ShutdownInterface
 {
 	/**
 	 * @author stev leibelt

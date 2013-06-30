@@ -1,4 +1,4 @@
-<phpunit bootstrap="tests/bootstrap.php"
+<phpunit bootstrap="test/bootstrap.php"
          cacheTokens="false"
          colors="true"
          convertErrorsToExceptions="true"

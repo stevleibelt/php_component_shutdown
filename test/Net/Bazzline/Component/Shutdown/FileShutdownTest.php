@@ -6,10 +6,19 @@
 
 namespace Test\Net\Bazzline\Component\Shutdown;
 
+use Net\Bazzline\Component\Shutdown\FileShutdown;
 use Exception;
 use PHPUnit_Framework_TestCase;
+use ReflectionClass;
 
-class FileShutdownTest
+/**
+ * Class FileShutdownTest
+ *
+ * @package Test\Net\Bazzline\Component\Shutdown
+ * @author stev leibelt <artodeto@arcor.de>
+ * @since 2013-06-30
+ */
+class FileShutdownTest extends PHPUnit_Framework_TestCase
 {
 	/**
 	 * @author stev leibelt
@@ -190,7 +199,7 @@ class FileShutdownTest
 	 */
 	private function getNewShutdown($setName = true)
 	{
-		$shutdown = new ShutdownFile();
+		$shutdown = new FileShutdown();
 		if ($setName) {
 			$shutdown->setName($this->shutdownFilePath);
 		}
