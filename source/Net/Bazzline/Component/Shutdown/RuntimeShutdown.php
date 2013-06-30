@@ -6,6 +6,8 @@
 
 namespace Net\Bazzline\Component\Shutdown;
 
+use RuntimeException;
+
 /**
  * Class RuntimeShutdown
  *
@@ -34,6 +36,12 @@ class RuntimeShutdown implements ShutdownInterface
      */
     public function request()
     {
+        if ($this->isRequested == true) {
+            throw new RuntimeException(
+                'Shutdown already requested.'
+            );
+        }
+
         $this->isRequested = true;
 
         return $this;
@@ -52,6 +60,12 @@ class RuntimeShutdown implements ShutdownInterface
      */
     public function cancel()
     {
+        if ($this->isRequested == true) {
+            throw new RuntimeException(
+                'Can not cancel no shutdown requested.'
+            );
+        }
+
         $this->isRequested = false;
 
         return $this;

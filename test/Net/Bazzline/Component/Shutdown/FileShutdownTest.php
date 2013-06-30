@@ -21,8 +21,8 @@ use ReflectionClass;
 class FileShutdownTest extends PHPUnit_Framework_TestCase
 {
 	/**
+     * @var string
 	 * @author stev leibelt
-	 * @var string
 	 * @since 2013-01-03
 	 */
 	private $shutdownFilePath;
@@ -192,9 +192,9 @@ class FileShutdownTest extends PHPUnit_Framework_TestCase
 	}
 
 	/**
-	 * @author stev leibelt
 	 * @param boolean $setName
 	 * @return \Net\Bazzline\Component\Shutdown\FileShutdown
+     * @author stev leibelt
 	 * @since 2013-01-03
 	 */
 	private function getNewShutdown($setName = true)
