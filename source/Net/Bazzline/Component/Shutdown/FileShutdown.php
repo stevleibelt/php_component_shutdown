@@ -18,9 +18,9 @@ use RuntimeException;
 class FileShutdown implements ShutdownInterface
 {
 	/**
+     * @var string
 	 * @author stev leibelt
 	 * @since 2013-01-03
-	 * @var string
 	 */
 	private $name;
 
@@ -53,6 +53,8 @@ class FileShutdown implements ShutdownInterface
 		} else {
 			touch ($this->name);
 		}
+
+        return $this;
 	}
 
 	/**
@@ -67,6 +69,8 @@ class FileShutdown implements ShutdownInterface
 		} else {
 			unlink ($this->name);
 		}
+
+        return $this;
 	}
 
 	/**
