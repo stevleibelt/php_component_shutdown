@@ -1,9 +1,8 @@
 <?php
 /**
  * @author stev leibelt <artodeto@arcor.de>
- * @since 2013-06-30 
+ * @since 2013-06-30
  */
-
 namespace Net\Bazzline\Component\Shutdown;
 
 use RuntimeException;
@@ -24,6 +23,8 @@ class RuntimeShutdown implements ShutdownInterface
      */
     private $isRequested;
 
+
+
     /**
      * @var string
      * @author stev leibelt <artodeto@arcor.de>
@@ -31,21 +32,22 @@ class RuntimeShutdown implements ShutdownInterface
      */
     private $name;
 
+
+
     /**
      * {$inheritDoc}
      */
     public function request()
     {
         if ($this->isRequested == true) {
-            throw new RuntimeException(
-                'Shutdown already requested.'
-            );
+            throw new RuntimeException('Shutdown already requested.');
         }
-
         $this->isRequested = true;
 
         return $this;
     }
+
+
 
     /**
      * {$inheritDoc}
@@ -55,21 +57,22 @@ class RuntimeShutdown implements ShutdownInterface
         return (!is_null($this->isRequested) && ($this->isRequested == true));
     }
 
+
+
     /**
      * {$inheritDoc}
      */
     public function cancel()
     {
         if ($this->isRequested == true) {
-            throw new RuntimeException(
-                'Can not cancel no shutdown requested.'
-            );
+            throw new RuntimeException('Can not cancel no shutdown requested.');
         }
-
         $this->isRequested = false;
 
         return $this;
     }
+
+
 
     /**
      * {$inheritDoc}
@@ -78,6 +81,8 @@ class RuntimeShutdown implements ShutdownInterface
     {
         return (is_null($this->name)) ? __CLASS__ : $this->name;
     }
+
+
 
     /**
      * {$inheritDoc}
