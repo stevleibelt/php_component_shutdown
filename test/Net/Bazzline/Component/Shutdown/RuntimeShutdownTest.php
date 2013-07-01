@@ -6,7 +6,6 @@
 namespace Test\Net\Bazzline\Component\Shutdown;
 
 use Net\Bazzline\Component\Shutdown\RuntimeShutdown;
-use Exception;
 use PHPUnit_Framework_TestCase;
 use ReflectionClass;
 
