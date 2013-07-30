@@ -37,7 +37,7 @@ class FileShutdown implements ShutdownInterface
 
 
     /**
-     * {$inheritDoc}
+     * {$inheritdoc}
      */
     public function isRequested()
     {
@@ -47,7 +47,7 @@ class FileShutdown implements ShutdownInterface
 
 
     /**
-     * {$inheritDoc}
+     * {$inheritdoc}
      */
     public function request()
     {
@@ -63,7 +63,7 @@ class FileShutdown implements ShutdownInterface
 
 
     /**
-     * {$inheritDoc}
+     * {$inheritdoc}
      */
     public function cancel()
     {
@@ -79,7 +79,7 @@ class FileShutdown implements ShutdownInterface
 
 
     /**
-     * {$inheritDoc}
+     * {$inheritdoc}
      */
     public function getName()
     {
@@ -94,7 +94,7 @@ class FileShutdown implements ShutdownInterface
 
     /**
      * Is adding '.shutdown' to given $name
-     * {$inheritDoc}
+     * {$inheritdoc}
      */
     public function setName($name)
     {

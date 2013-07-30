@@ -35,7 +35,7 @@ class RuntimeShutdown implements ShutdownInterface
 
 
     /**
-     * {$inheritDoc}
+     * {$inheritdoc}
      */
     public function request()
     {
@@ -50,7 +50,7 @@ class RuntimeShutdown implements ShutdownInterface
 
 
     /**
-     * {$inheritDoc}
+     * {$inheritdoc}
      */
     public function isRequested()
     {
@@ -60,7 +60,7 @@ class RuntimeShutdown implements ShutdownInterface
 
 
     /**
-     * {$inheritDoc}
+     * {$inheritdoc}
      */
     public function cancel()
     {
@@ -75,7 +75,7 @@ class RuntimeShutdown implements ShutdownInterface
 
 
     /**
-     * {$inheritDoc}
+     * {$inheritdoc}
      */
     public function getName()
     {
@@ -85,7 +85,7 @@ class RuntimeShutdown implements ShutdownInterface
 
 
     /**
-     * {$inheritDoc}
+     * {$inheritdoc}
      */
     public function setName($name)
     {
