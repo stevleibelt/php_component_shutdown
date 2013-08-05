@@ -2,13 +2,15 @@
 
 ## General
 
-This component provides the ShutdownInterface as well as an ShutdownAwareInterface. It comes with two implementations of the ShutdownInterface. You can use this interface to shutdown classes or processes to prevent you from using kill to stop the process. With the shutdown, you can controll how you class or process should go to a well defined shutdown.
+This component provides the *ShutdownInterface* as well as an *ShutdownAwareInterface*. It comes with two implementations of the *ShutdownInterface*. 
+
+You can use this interface to shutdown classes or processes to prevent you from using kill to stop the process. With the shutdown, you can controll how you class or process should go to a well defined shutdown.
 
 This component was created by splitting up the [PHP_Bazzline_Utility](https://github.com/stevleibelt/PHP_Bazzline_Utility) repository.
 
 ## Implementations
 
-Two implementations exists. The FileShutdown and the RuntimeShutdown.
+Two implementations exists. The *FileShutdown* and the *RuntimeShutdown*.
 
 ### RuntimeShutdown
 
@@ -20,7 +22,9 @@ The FileShutdown can be used to shutdown an running process outside from the cur
 
 ## History
 
-    * v1.0.0
-        * Finished ShutdownInterface and ShutdownAwareInterface
-        * Added implementation for FileShutdown and RuntimeShutdown
-        * Covered implementations with unittests
+* 1.0.1
+    * Moved to LGPLv3
+* v1.0.0
+    * Finished *ShutdownInterface* and *ShutdownAwareInterface*
+    * Added implementation for *FileShutdown* and *RuntimeShutdown*
+    * Covered implementations with unittests
