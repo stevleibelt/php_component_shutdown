@@ -24,8 +24,6 @@ interface ShutdownInterface
      */
     public function request();
 
-
-
     /**
      * Validates if shutdown signal exists
      *
@@ -34,8 +32,6 @@ interface ShutdownInterface
      * @since 2013-01-03
      */
     public function isRequested();
-
-
 
     /**
      * Cancels shutdown
@@ -47,8 +43,6 @@ interface ShutdownInterface
      */
     public function cancel();
 
-
-
     /**
      * Returns name
      *
@@ -57,8 +51,6 @@ interface ShutdownInterface
      * @since 2013-01-03
      */
     public function getName();
-
-
 
     /**
      * Sets name

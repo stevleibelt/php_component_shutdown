@@ -22,6 +22,8 @@ The FileShutdown can be used to shutdown an running process outside from the cur
 
 ## History
 
+* 1.0.2
+    * Added optional constructor $name
 * 1.0.1
     * Moved to LGPLv3
 * v1.0.0

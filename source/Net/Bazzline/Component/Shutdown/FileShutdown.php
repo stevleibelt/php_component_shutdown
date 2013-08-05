@@ -23,8 +23,6 @@ class FileShutdown implements ShutdownInterface
      */
     private $name;
 
-
-
     /**
      * @author stev leibelt
      * @since 2013-01-03
@@ -34,8 +32,6 @@ class FileShutdown implements ShutdownInterface
         $this->shutdown();
     }
 
-
-
     /**
      * {$inheritdoc}
      */
@@ -43,8 +39,6 @@ class FileShutdown implements ShutdownInterface
     {
         return file_exists($this->name);
     }
-
-
 
     /**
      * {$inheritdoc}
@@ -60,8 +54,6 @@ class FileShutdown implements ShutdownInterface
         return $this;
     }
 
-
-
     /**
      * {$inheritdoc}
      */
@@ -76,8 +68,6 @@ class FileShutdown implements ShutdownInterface
         return $this;
     }
 
-
-
     /**
      * {$inheritdoc}
      */
@@ -90,8 +80,6 @@ class FileShutdown implements ShutdownInterface
         }
     }
 
-
-
     /**
      * Is adding '.shutdown' to given $name
      * {$inheritdoc}
@@ -100,8 +88,6 @@ class FileShutdown implements ShutdownInterface
     {
         $this->name = (string) $name . '.shutdown';
     }
-
-
 
     /**
      * @author stev leibelt
@@ -113,8 +99,6 @@ class FileShutdown implements ShutdownInterface
         return (is_string($this->name) && strlen($this->name) > 0);
     }
 
-
-
     /**
      * @author stev leibelt
      * @return string
@@ -124,8 +108,6 @@ class FileShutdown implements ShutdownInterface
     {
         return (string) str_replace('\\', '_', get_class($this)) . '.shutdown';
     }
-
-
 
     /**
      * @author stev leibelt

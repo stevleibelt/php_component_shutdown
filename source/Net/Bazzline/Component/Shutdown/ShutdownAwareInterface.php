@@ -21,8 +21,6 @@ interface ShutdownAwareInterface
      */
     public function setShutdown(ShutdownInterface $shutdown);
 
-
-
     /**
      * Get shutdown
      *

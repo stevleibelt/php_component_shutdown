@@ -32,7 +32,17 @@ class RuntimeShutdown implements ShutdownInterface
      */
     private $name;
 
-
+    /**
+     * @param string $name
+     * @author stev leibelt <artodeto@arcor.de>
+     * @since 2013-06-30
+     */
+    public function __construct($name = '')
+    {
+        if (strlen($name) > 0) {
+            $this->setName($name);
+        }
+    }
 
     /**
      * {$inheritdoc}
@@ -47,8 +57,6 @@ class RuntimeShutdown implements ShutdownInterface
         return $this;
     }
 
-
-
     /**
      * {$inheritdoc}
      */
@@ -56,8 +64,6 @@ class RuntimeShutdown implements ShutdownInterface
     {
         return (!is_null($this->isRequested) && ($this->isRequested == true));
     }
-
-
 
     /**
      * {$inheritdoc}
@@ -72,8 +78,6 @@ class RuntimeShutdown implements ShutdownInterface
         return $this;
     }
 
-
-
     /**
      * {$inheritdoc}
      */
@@ -81,8 +85,6 @@ class RuntimeShutdown implements ShutdownInterface
     {
         return (is_null($this->name)) ? __CLASS__ : $this->name;
     }
-
-
 
     /**
      * {$inheritdoc}
