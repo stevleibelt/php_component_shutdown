@@ -1,5 +1,8 @@
 # php_component_shutdown
 
+The build status of the current master branch is tracked by Travis CI: 
+[![Build Status](https://travis-ci.org/stevleibelt/php_component_shutdown.png?branch=master)](http://travis-ci.org/stevleibelt/php_component_shutdown)
+
 ## General
 
 This component provides the *ShutdownInterface* as well as an *ShutdownAwareInterface*. It comes with two implementations of the *ShutdownInterface*. 
