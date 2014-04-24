@@ -12,15 +12,8 @@ namespace Net\Bazzline\Component\Shutdown;
  * @author stev leibelt <artodeto@arcor.de>
  * @since 2013-06-30
  */
-interface ShutdownAwareInterface
+interface ShutdownAwareInterface extends ShutdownDependentInterface
 {
-    /**
-     * Set shutdown
-     *
-     * @param ShutdownInterface $shutdown
-     */
-    public function setShutdown(ShutdownInterface $shutdown);
-
     /**
      * Get shutdown
      *

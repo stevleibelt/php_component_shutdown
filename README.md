@@ -25,11 +25,13 @@ The FileShutdown can be used to shutdown an running process outside from the cur
 
 ## History
 
-* 1.0.2
+* [1.0.3](https://github.com/stevleibelt/php_component_shutdown/tree/1.0.3)
+    * Added ShutdownDependentInterface
+* [1.0.2](https://github.com/stevleibelt/php_component_shutdown/tree/1.0.2)
     * Added optional constructor $name
-* 1.0.1
+* [1.0.1](https://github.com/stevleibelt/php_component_shutdown/tree/1.0.1)
     * Moved to LGPLv3
-* v1.0.0
+* [1.0.0](https://github.com/stevleibelt/php_component_shutdown/tree/v1.0.0)
     * Finished *ShutdownInterface* and *ShutdownAwareInterface*
     * Added implementation for *FileShutdown* and *RuntimeShutdown*
     * Covered implementations with unittests
