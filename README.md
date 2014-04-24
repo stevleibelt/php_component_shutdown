@@ -1,9 +1,9 @@
-# php_component_shutdown
+# Process Shutdown Component
 
 The build status of the current master branch is tracked by Travis CI: 
 [![Build Status](https://travis-ci.org/stevleibelt/php_component_shutdown.png?branch=master)](http://travis-ci.org/stevleibelt/php_component_shutdown)
 
-## General
+# General
 
 This component provides the *ShutdownInterface* as well as an *ShutdownAwareInterface*. It comes with two implementations of the *ShutdownInterface*. 
 
@@ -11,19 +11,23 @@ You can use this interface to shutdown classes or processes to prevent you from 
 
 This component was created by splitting up the [PHP_Bazzline_Utility](https://github.com/stevleibelt/PHP_Bazzline_Utility) repository.
 
-## Implementations
+# Implementations
 
 Two implementations exists. The *FileShutdown* and the *RuntimeShutdown*.
 
-### RuntimeShutdown
+## RuntimeShutdown
 
 The RuntimeLock can be used to shutdown an instance during one request. This can be useful if you want to react on runtime environment changes or something similar.
 
-### FileShutdown
+## FileShutdown
 
 The FileShutdown can be used to shutdown an running process outside from the current request. If you have to implement longer running requests (runtime above one minute for example), you can easily touch a fitting shutdown file to stop the process in a well defined way.
 
-## History
+# Guture Improvements
+
+* take a look to [graceful death](https://github.com/gabrielelana/graceful-death/blob/master/src/GracefulDeath.php) to see if features can be merged
+
+# History
 
 * [1.0.3](https://github.com/stevleibelt/php_component_shutdown/tree/1.0.3)
     * Added ShutdownDependentInterface
