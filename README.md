@@ -9,7 +9,7 @@ This component provides the *ShutdownInterface* as well as an *ShutdownAwareInte
 
 You can use this interface to shutdown classes or processes to prevent you from using kill to stop the process. With the shutdown, you can controll how you class or process should go to a well defined shutdown.
 
-This component was created by splitting up the [PHP_Bazzline_Utility](https://github.com/stevleibelt/PHP_Bazzline_Utility) repository.
+This component was created by splitting up the [PHP_Bazzline_Utility](https://github.com/stevleibelt/archive/tree/master/php/bazzlineUtility) repository.
 
 # Implementations
 
