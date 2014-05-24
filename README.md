@@ -23,7 +23,7 @@ The RuntimeLock can be used to shutdown an instance during one request. This can
 
 The FileShutdown can be used to shutdown an running process outside from the current request. If you have to implement longer running requests (runtime above one minute for example), you can easily touch a fitting shutdown file to stop the process in a well defined way.
 
-# Guture Improvements
+# Future Improvements
 
 * take a look to [graceful death](https://github.com/gabrielelana/graceful-death/blob/master/src/GracefulDeath.php) to see if features can be merged
 
