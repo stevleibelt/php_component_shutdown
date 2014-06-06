@@ -1,6 +1,7 @@
 # Process Shutdown Component
 
 The build status of the current master branch is tracked by Travis CI: 
+
 [![Build Status](https://travis-ci.org/stevleibelt/php_component_shutdown.png?branch=master)](http://travis-ci.org/stevleibelt/php_component_shutdown)
 
 # General
