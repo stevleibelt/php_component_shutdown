@@ -1,6 +1,6 @@
 <?php
 /**
- * @author stev leibelt <artodeto@arcor.de>
+ * @author stev leibelt <artodeto@bazzline.net>
  * @since 2013-06-30
  */
 namespace Net\Bazzline\Component\Shutdown;
@@ -9,7 +9,7 @@ namespace Net\Bazzline\Component\Shutdown;
  * Class ShutdownInterface
  *
  * @package Net\Bazzline\Component\Shutdown
- * @author stev leibelt <artodeto@arcor.de>
+ * @author stev leibelt <artodeto@bazzline.net>
  * @since 2013-06-30
  */
 interface ShutdownInterface

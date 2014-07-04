@@ -1,6 +1,6 @@
 <?php
 /**
- * @author stev leibelt <artodeto@arcor.de>
+ * @author stev leibelt <artodeto@bazzline.net>
  * @since 2013-06-30
  */
 namespace Test\Net\Bazzline\Component\Shutdown;
@@ -14,7 +14,7 @@ use ReflectionClass;
  * Class FileShutdownTest
  *
  * @package Test\Net\Bazzline\Component\Shutdown
- * @author stev leibelt <artodeto@arcor.de>
+ * @author stev leibelt <artodeto@bazzline.net>
  * @since 2013-06-30
  */
 class FileShutdownTest extends PHPUnit_Framework_TestCase

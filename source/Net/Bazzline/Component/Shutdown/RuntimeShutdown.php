@@ -1,6 +1,6 @@
 <?php
 /**
- * @author stev leibelt <artodeto@arcor.de>
+ * @author stev leibelt <artodeto@bazzline.net>
  * @since 2013-06-30
  */
 namespace Net\Bazzline\Component\Shutdown;
@@ -11,14 +11,14 @@ use RuntimeException;
  * Class RuntimeShutdown
  *
  * @package Net\Bazzline\Component\Shutdown
- * @author stev leibelt <artodeto@arcor.de>
+ * @author stev leibelt <artodeto@bazzline.net>
  * @since 2013-06-30
  */
 class RuntimeShutdown implements ShutdownInterface
 {
     /**
      * @var boolean
-     * @author stev leibelt <artodeto@arcor.de>
+     * @author stev leibelt <artodeto@bazzline.net>
      * @since 2013-06-30
      */
     private $isRequested;
@@ -27,14 +27,14 @@ class RuntimeShutdown implements ShutdownInterface
 
     /**
      * @var string
-     * @author stev leibelt <artodeto@arcor.de>
+     * @author stev leibelt <artodeto@bazzline.net>
      * @since 2013-06-30
      */
     private $name;
 
     /**
      * @param string $name
-     * @author stev leibelt <artodeto@arcor.de>
+     * @author stev leibelt <artodeto@bazzline.net>
      * @since 2013-06-30
      */
     public function __construct($name = '')

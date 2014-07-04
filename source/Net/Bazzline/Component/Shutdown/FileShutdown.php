@@ -1,6 +1,6 @@
 <?php
 /**
- * @author stev leibelt <artodeto@arcor.de>
+ * @author stev leibelt <artodeto@bazzline.net>
  * @since 2013-06-30
  */
 namespace Net\Bazzline\Component\Shutdown;
@@ -11,7 +11,7 @@ use RuntimeException;
  * Class FileShutdown
  *
  * @package Net\Bazzline\Component\Shutdown
- * @author stev leibelt <artodeto@arcor.de>
+ * @author stev leibelt <artodeto@bazzline.net>
  * @since 2013-06-30
  */
 class FileShutdown implements ShutdownInterface
